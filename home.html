@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="web/img/plebada_icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #e9e9e9; text-align: left; color: black;">
+    <!-- esta es la barra de arriba -->
+    <div class="home-bar">
+        <h1>La Plebada</h1>
+
+        <button type="button" onclick="location.href='menu.html'">Ir al menú</button>
+    </div>
+
+    <!-- texto de inicio -->
+    <div class="Alert">
+
+        <h2> welcum a la plebada </h2>
+
+    </div>
+
+    <!-- codigo publicacion (con cambio de imagen) -->
+    <div class="pub" style="top: 200px; left: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>El Jean</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>Jean al paso de los años</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen (cambio de imagen con botones) -->
+        <div class="pub-img">
+
+            <img src="users/yinyang.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+
+            <div class="change-img">
+
+                <button1 onclick="document.getElementById('jean1').src='users/yinyang.jpg'"> < </button1>
+
+                <button2 onclick="document.getElementById('jean1').src='users/jean.PNG'"> > </button2>
+
+            </div>
+
+            <img id="jean1" src="users/yinyang.jpg" alt="Jean Saro" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion (con sonido) -->
+    <div class="pub" style="top: 200px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Dahian</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>Toca al Dahian y algo pasará</p1>
+
+            </div>
+
+
+        </div>
+
+        <!-- imagen (con sonido) -->
+
+        <div class="pub-img">
+
+            <img src="users/dahianculo.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <div class="presiona-sonido">
+
+                <audio id="sound" src="web/sounds/kyaaa.mp3" preload="auto"> </audio>
+
+                <script>
+                    document.querySelector(".presiona-sonido").addEventListener("click", function () {
+                        document.querySelector("audio").play();
+                    });
+                </script>
+
+            </div>
+
+            <img class="dayan" src="users/dahianculo.jpg" alt="sexo" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion (con cambio de imagen) -->
+    <div class="pub" style="top: 700px; left: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Aldebaran</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>Con filtro / Sin filtro</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen (cambio de imagen con botones) -->
+        <div class="pub-img">
+
+            <img src="users/wapo.jpeg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <div class="change-img">
+
+                <button1 onclick="document.getElementById('aldebaran').src='users/wapo.jpeg'"> < </button1>
+
+                <button2 onclick="document.getElementById('aldebaran').src='users/drogo.jpeg'"> > </button2>
+
+            </div>
+
+            <img id="aldebaran" src="users/wapo.jpeg" alt="Aldebaran" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 700px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Monocromatico</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>Mexichango y normal</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen -->
+        <div class="pub-img">
+            <img src="users/monocromatico.jpeg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="nw" src="users/monocromatico.jpeg" alt="ni..." object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 1200px; left: 100px;">
+
+        <!-- color enfacis -->
+        <div class="pub-content" style="background-color: dimgray ;">
+
+            <div class="pub-text-content">
+
+                <div class="pub-title">
+
+                    <!-- titulo -->
+                    <h3>Salon del B</h3>
+
+                </div>
+
+                <div class="pub-text">
+
+                    <!-- texto -->
+                    <p1>Se reporta construcción de una torre gemela en el salon de 3B de Meca (aka putos) </p1>
+
+                </div>
+
+            </div>
+
+            <!-- imagen (cambio de imagen con botones) -->
+            <div class="pub-img">
+
+                <img src="users/twin.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+                <img id="tresb" src="users/twin.jpg" alt="nine eleven" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 1200px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Jean Insano</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>wasaaaaaaa 👻👻👻👻👻</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/waza.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/waza.jpg" alt="insanidad" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 1700px; left: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Mantequilla Empresario</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>llevele llevele el kilo de sexo a un peso</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/bussy.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="mant" src="users/bussy.jpg" alt="bill-gates" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 1700px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Luis Sad</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>pichula troste</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/luisad.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/luisad.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 2200px; left: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Sintomas del Estreñimiento</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>cagarse en media clase</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/pray.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/pray.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 2200px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>pingu negro</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>chaneke captado en camara 100% real <br>   no facke </p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/chaneque.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/chaneque.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 2700px; left: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Ay el amor 😍</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>quedate con quien te mire como esteban al diego</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+            <img src="users/amer.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/amer.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 2700px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Saca mota</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>Me cago de ganas dame mota 🥵</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/isac.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/isac.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 3200px; left: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Publicacion 🔞</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>S3xo or4l enrique x 1800</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/mamada.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/mamada.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+    <!-- codigo publicacion -->
+    <div class="pub" style="top: 3200px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>JAJAJA ESTA BIEN PINCHE PERRO CHISTOSO EL TECHO WEI</h3>
+
+            </div>
+
+            <div class="pub-text">
+
+                <!-- texto -->
+                <p1>AJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJA</p1>
+
+            </div>
+
+        </div>
+
+        <!-- imagen  -->
+        <div class="pub-img">
+
+            <img src="users/techo.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img id="ins" src="users/techo.jpg" alt="all" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+</body>
+</html> 
