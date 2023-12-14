@@ -73,9 +73,7 @@ p1 {
     border-radius: 16px;
 }
 
-button {
-    background-color: black;
-    color: white;
+.menu-button {
     width: 4%;
     height: 100%;
     position: absolute;

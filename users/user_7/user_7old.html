@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="web/img/plebada_icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #e9e9e9; text-align: left; color: black;">
+    <!-- esta es la barra de arriba -->
+    <div class="home-bar">
+        <h1>La Plebada</h1>
+
+        <button type="button" onclick="location.href='menu.html'">Ir al menú</button>
+    </div>
+
+    <!-- texto de inicio -->
+    <div class="User" style="background-color: #0f2944;">
+
+        <div class="User_photo">
+
+            <img id="Photo" src="profile_picture.jpg" alt="Miguelcrl7" style="border-radius: 50%;" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+        <div class="User_name">
+
+            <h2> Miguelcrl7 </h2>
+
+        </div>
+
+        <div class="User_acount_age">
+
+            <h>Se unio en 21/11/2023</h>
+
+        </div>
+
+        <div class="User_stats">
+
+            <div class="User_pub-count">
+
+                <h2>#</h2>
+                <br>
+                <h2>Publicaciones</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- codigo publicacion (con cambio de imagen) #1 #1 #1 -->
+    <div class="pub" style="top: 700px; left: 100px;">
+
+            <div class="pub-text-content">
+                <div class="pub-title">
+                    <!-- titulo -->
+                    <h3>Test</h3>
+                </div>
+            </div>
+            <!-- imagen (cambio de imagen con botones) -->
+            <div class="pub-img" style="backdrop-filter: blur(100px); background-image: url(" profile_picture.jpg"); ">
+                <img id="jean1" src="profile_picture.jpg" alt="Jean Saro" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+            </div>
+    </div>
+
+    <!-- codigo publicacion (con sonido) #2 #2 #2 -->
+    <div class="pub" style="top: 700px; right: 50%; transform: translate(50%,0%);">
+
+            <div class="pub-text-content">
+
+                <div class="pub-title">
+
+                    <!-- titulo -->
+                    <h3>Test</h3>
+
+                </div>
+
+                <div class="pub-text">
+
+                    <!-- texto -->
+                    <p1>test</p1>
+
+                </div>
+
+
+            </div>
+
+            <!-- imagen (con sonido) -->
+
+            <div class="pub-img">
+
+                <div class="presiona-sonido">
+
+                    <audio id="sound" src="web/sounds/kyaaa.mp3" preload="auto"> </audio>
+
+                    <script>
+                        document.querySelector(".presiona-sonido").addEventListener("click", function () {
+                            document.querySelector("audio").play();
+                        });
+                    </script>
+
+                </div>
+
+                <img class="dayan" src="profile_picture.jpg" alt="sexo" object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+            </div>
+
+    </div>
+
+    <!-- codigo publicacion #-#-# -->
+    <div class="pub" style="top: 700px; right: 5%">
+
+            <div class="pub-text-content">
+
+                <div class="pub-title">
+
+                    <!-- titulo -->
+                    <h3>Test</h3>
+
+                </div>
+
+                <div class="pub-text">
+
+                    <!-- texto -->
+                    <p1>test</p1>
+
+                </div>
+
+            </div>
+
+            <!-- imagen -->
+            <div class="pub-img">
+
+                <img id="nw" src="profile_picture.jpg" alt="ni..." object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+            </div>
+
+    </div>
+
+    <!-- codigo publicacion (con cambio de imagen)  -->
+    <div class="pub" style="top: 200px; right: 100px;">
+
+        <div class="pub-text-content">
+
+            <div class="pub-title">
+
+                <!-- titulo -->
+                <h3>Test</h3>
+
+            </div>
+
+        </div>
+
+        <!-- imagen (cambio de imagen con botones) -->
+        <div class="pub-img">
+
+            <img src="profile_picture.jpg" style="height: 120%; width: 120%; z-index: -1; filter: blur(5px) opacity(0.8); position: absolute; top: 0; left: 0;">
+
+            <img src="profile_picture.jpg" alt=" " object-fit="contain" width="" height="100%" transform="0%,-50%" object-position="0%,50%">
+
+        </div>
+
+    </div>
+
+
+</body>
+</html> 
